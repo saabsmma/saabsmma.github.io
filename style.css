@@ -1,0 +1,649 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--light-black);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+    border: 3px var(--super-light-black) solid;
+    border-radius: 100vw;
+    margin-inline: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--grey);
+}
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--light-grey) var(--light-black);
+    }
+}
+
+:root {
+    --light-black: #272727;
+    --super-light-black: #373737;
+    --dark-grey: #5b5a58;
+    --grey: #959492;
+    --light-grey: #c9c7c8;
+    --super-light-grey: rgb(240, 240, 240);
+    --blue: #39a6d1;
+}  
+
+::-moz-selection {
+    color: black;
+    background-color: var(--light-grey);
+  }
+::selection {
+    color: black;
+    background-color: var(--light-grey);
+}
+
+h1 {
+    font-weight: 600;
+}
+p {
+    font-weight: 500;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {  
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+}
+.logo {
+    width: 120px;
+    filter: invert(1);
+}
+.menu {
+    width: 60px;
+    height: 60px;
+    border: #727272 solid 2px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu-img {
+    width: 20px;
+    filter: invert(100%);
+}
+.links-holder {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.links {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+
+.page-1 {
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page-1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-1 div h1 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 160px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.page-1 div h1 span {
+    font-size: 65px;
+    display: block;
+    font-weight: 800;
+}
+.page-1 div p {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.page-1 div p span {
+    font-weight: bold;
+}
+.page-1 img {
+    width: 60%;
+}
+
+hr {
+    margin: auto;
+    border: solid black 1px;
+    width: 50%;
+}
+
+.page-2 {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-2 h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.about-us-content-holder {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-us-content-holder div {
+    width: 320px;
+    height: 320px;
+    background-color: var(--super-light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--light-grey) 0 0 10px;
+    margin: 10px;
+}
+.about-us-content-holder div img {
+    width: 100px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.about-us-content-holder div:nth-child(3) img {
+    filter: invert(62%) sepia(47%) saturate(653%) hue-rotate(153deg) brightness(86%) contrast(88%);
+}
+.about-us-content-holder div p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    max-width: 70%;
+}
+
+.page-3 {
+    padding: 80px 80px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.page-3 h1 {
+    font-size: 50px;
+}
+.why-need-sma-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.why-need-sma-container div {
+    width: 300px;
+    height: 300px;
+    background-color: var(--super-light-grey);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: var(--light-grey) 0 0 10px;
+}
+.why-need-sma-container div img {
+    width: 100px;
+}
+.why-need-sma-container div p {
+    height: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.services-holder {
+    width: 100%;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.services-title {
+    font-size: 60px;
+}
+.each-service-holder {
+    margin: 40px 0;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+}
+.each-service-holder div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.each-service-holder div h1 {
+    margin: 20px 0;
+    font-size: 40px;
+}
+.each-service-holder div p {
+    font-size: 20px;
+}
+.each-service-holder img {
+    height: 70%;
+    margin: 30px;
+}
+.each-service-holder:nth-child(1) img {
+    border-radius: 10px;
+    display: none;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.foot-logo {
+    width: 200px;
+    filter: invert(1);
+}
+.vl {
+    margin: auto;
+    border: solid white 1px;
+    height: 60%;
+}
+.foot-services-holder {
+    height: 65%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-services-holder ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.services-link {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.contact-us-container {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-container p {
+    font-size: 35px;
+}
+.contact-us-container div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-us-container div a img {
+    width: 70px;
+}
+
+.phone-links-holder {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-color: var(--light-black);
+    top: 100px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    display: none;
+    z-index: 10;
+}
+.phone-links {
+    text-decoration: none;
+    color: var(--super-light-grey);
+    background-color: var(--super-light-black);
+    font-family: "Poppins", sans-serif;
+    min-height: 70px;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    text-align: right;
+    border: var(--dark-grey) solid 3px;
+    border-top: none;
+}
+.phone-links:hover {
+    background-color: var(--grey);
+}
+.phone-links:nth-child(1) {
+    border-top: var(--dark-grey) solid 3px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        height: 100px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .menu {
+        display: flex;
+    }
+    .links-holder {
+        display: none;
+    }
+
+    .page-1 {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 120px 20px 40px 20px;
+    }
+    .page-1 div h1 {
+        margin: 0 0 40px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    .page-1 div h1 span {
+        font-size: 50px;
+    }
+    .page-1 div p {
+        font-size: 20px;
+        display: inline;
+        text-align: center;
+    }
+    .page-1 img {
+        width: 300px;
+        margin: 60px 0 30px 0;
+    }
+    
+    .page-2 {
+        padding: 50px 0;
+    }
+    .page-2 h1 {
+        margin: 0;
+    }
+    .about-us-content-holder div {
+        width: 270px;
+        height: 270px;
+        margin-top: 20px;
+    }
+    .about-us-content-holder div p {
+        font-size: 13px;
+    }
+
+    .page-3 {
+        padding: 60px 30px;
+    }
+    .page-3 h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .why-need-sma-container {
+        margin: 0;
+        flex-direction: column;
+    }
+    .why-need-sma-container div {
+        width: 280px;
+        height: 280px;
+        margin-top: 30px;
+    }
+
+    footer {
+        height: auto;
+        display: block;
+    }
+    .foot-logo {
+        width: 150px;
+    }
+    .vl {
+        display: none;
+    }
+    .foot-services-holder {
+        width: 100%;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+    .foot-services-holder ul {
+        display: block;
+    }
+    .contact-us-container {
+        width: 80%;
+        display: block;
+    }
+    .contact-us-container div {
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .contact-us-container div a img {
+        width: 50px;
+    }
+
+    /* Service's styles */
+    .services-holder {
+        padding: 130px 30px 30px 30px;
+    }
+    .services-title {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .each-service-holder {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+    .each-service-holder:nth-child(2),
+    .each-service-holder:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .each-service-holder div {
+        width: 100%;
+        height: auto;
+    }
+    .each-service-holder div h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .each-service-holder img {
+        height: auto;
+        width: 80vw;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+    nav {
+        height: 100px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .menu {
+        display: flex;
+    }
+    .links-holder {
+        display: none;
+    }
+
+    .page-1 {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 120px 20px 40px 20px;
+    }
+    .page-1 div h1 {
+        margin: 0 0 40px 0;
+        font-size: 50px;
+        text-align: center;
+    }
+    .page-1 div h1 span {
+        font-size: 70px;
+    }
+    .page-1 div p {
+        font-size: 30px;
+        display: inline;
+        text-align: center;
+    }
+    .page-1 img {
+        width: 600px;
+        margin: 60px 0 80px 0;
+    }
+    
+    .page-2 {
+        padding: 50px 0;
+    }
+    .page-2 h1 {
+        margin: 0;
+    }
+    .about-us-content-holder div {
+        width: 270px;
+        height: 270px;
+        margin: 20px;
+    }
+    .about-us-content-holder div p {
+        font-size: 13px;
+    }
+
+    .page-3 {
+        padding: 60px 30px;
+    }
+    .page-3 h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .why-need-sma-container {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .why-need-sma-container div {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-logo {
+        width: 350px;
+    }
+    .vl {
+        display: none;
+    }
+    .foot-services-holder {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .foot-services-holder {
+        display: block;
+        width: 65%;
+        font-size: 25px;
+    }
+    .foot-services-holder ul {
+        display: block;
+    }
+    .services-link {
+        font-size: 50px;
+    }
+    .contact-us-container {
+        display: block;
+        width: 65%; 
+    }
+    .contact-us-container p {
+        font-size: 50px;
+    }
+    .contact-us-container div {
+        width: 60%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .contact-us-container div a img {
+        width: 50px;
+    }
+
+    /* Service's styles */
+    .services-holder {
+        padding: 130px 30px 30px 30px;
+    }
+    .services-title {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .each-service-holder {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+    .each-service-holder:nth-child(2),
+    .each-service-holder:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+    .each-service-holder div {
+        width: 100%;
+        height: auto;
+    }
+    .each-service-holder div h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .each-service-holder img {
+        height: auto;
+        width: 70vw;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+}

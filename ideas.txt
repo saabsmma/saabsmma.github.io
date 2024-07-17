@@ -1,0 +1,10 @@
+*darkmode
+*scroll down animation at the bottom right corner of the first page
+*the 3d model of the logo at the right side of the first page
+*some smiling face in the about us page
+
+
+
+things to do
+*add hover effects and some animation
+*upload
