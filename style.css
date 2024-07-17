@@ -90,7 +90,6 @@ nav {
     filter: invert(100%);
 }
 .links-holder {
-    width: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +99,8 @@ nav {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
+    cursor: pointer ;
+    margin-left: 30px;
 }
 
 .page-1 {
@@ -228,7 +229,7 @@ hr {
 
 .services-holder {
     width: 100%;
-    padding: 120px 80px;
+    padding: 120px 80px 0 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +241,6 @@ hr {
 .each-service-holder {
     margin: 40px 0;
     width: 100%;
-    height: 70vh;
     display: flex;
     justify-content: space-around;
 }
@@ -258,7 +258,7 @@ hr {
     font-size: 20px;
 }
 .each-service-holder img {
-    height: 70%;
+    width: 30%;
     margin: 30px;
 }
 .each-service-holder:nth-child(1) img {
