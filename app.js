@@ -32,8 +32,6 @@ const whyNeedSmaPage = document.querySelector(".page-3");
 let aboutUsPagePositionDesired = aboutUsPage.getBoundingClientRect().top - document.querySelector(".page-1").getBoundingClientRect().top - 80;
 let whyNeedSmaPagePositionDesired = whyNeedSmaPage.getBoundingClientRect().top - document.querySelector(".page-1").getBoundingClientRect().top - 80;
 
-console.log(whyNeedSmaPagePositionDesired);
-
 aboutUsLink.forEach((eachLink)=> {
     eachLink.addEventListener("click", () => {
         window.scroll({

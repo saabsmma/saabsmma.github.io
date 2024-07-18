@@ -258,7 +258,8 @@ hr {
     font-size: 20px;
 }
 .each-service-holder img {
-    width: 30%;
+    height: 70%;
+    max-width: 40%;
     margin: 30px;
 }
 .each-service-holder:nth-child(1) img {
